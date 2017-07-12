@@ -2,8 +2,8 @@ import json
 import api
 
 def test_count1():
-    data = api.count('https://pt.wikipedia.org/wiki/Sons_of_Anarchy', 'Gemma')
-    compara = '{"Ocorrencias": 4}'
+    data = api.count('https://pt.wikipedia.org/wiki/Sons_of_Anarchy', 'Opie')
+    compara = '{"Ocorrencias": 1}'
     json.dumps(compara)
     assert data == compara
     
